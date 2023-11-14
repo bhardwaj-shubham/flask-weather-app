@@ -4,12 +4,34 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background: rgb(34,193,195);
+    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.3rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
 .container h2, h4 {
     text-align: center;
+    color: white;
 }
 
 .icon {
     width: 10rem;
+    background-color: white;
 }
 
 .info {
@@ -17,5 +39,29 @@
 }
 
 .card {
-    border: 0.4px solid black;
+    border: 0.4px solid white;
+    color: white;
+    background: rgb(34,193,195);
+    background: linear-gradient(270deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-body {
+    padding-top: 2.2rem;
+    margin-left: 1.4rem;
+}
+
+@media (max-width: 769px) {
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+    .search-box {
+        display: flex;
+    }
 }
